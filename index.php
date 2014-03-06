@@ -14,7 +14,8 @@
  * Example:
  *  1.  Rename your project index file from index.php to index_project.php
  *  2.  Provide $project_index_file='index_project.php';
- *  3.  Create cache dir where your project index file and give 777 rights.
+ *  3.  Put micro cache file with name index.php where there is project index.php 
+ *  4.  Create cache dir where your project index file and give 777 rights.
  * 
  *  Cheers n Enjoy Caching micro System
  * 
@@ -90,7 +91,7 @@ if(file_exists(FC_CACHE_FILE)){
     }  
   }
 
- /**If no cache folder found give message which will help you to debug;) **/
+ /**If no cache folder found,it will give message which helps to debug;) **/
 if(FC_USE_CACHE){
     if(!file_exists(FC_CACHE_DIR) || !is_writeable(FC_CACHE_DIR)){
         die('<pre>Please create '.FC_CACHE_DIR.' and give writeable permission.<br/> <b>ie:</b> mkdir -p '.FC_CACHE_DIR.' && chmod 777 '.FC_CACHE_DIR.'</pre>');
