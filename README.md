@@ -9,7 +9,8 @@
   Example:
    1.  Rename your project index file from index.php to index_project.php
    2.  Provide $project_index_file='index_project.php';
-   3.  Create cache dir where your project index file and give 777 rights.
+   3. Put micro cache file with name index.php where there is project index.php 
+   4.  Create cache dir where your project index file and give 777 rights.
   
    Cheers n Enjoy Caching micro System
   
